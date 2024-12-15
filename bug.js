@@ -1,0 +1,2 @@
+function add(a, b) {  return a + b; } function subtract(a, b) {  return a - b;} function multiply(a, b) {  return a 
+* b;} function divide(a, b) {  if (b === 0) {    throw new Error('Cannot divide by zero');  }  return a / b;} let result = add(5,3); result = multiply(result, subtract(10,2)); result = divide(result, add(2,2)); console.log(result); // Throws an error if any of the intermediate calculations result in division by zero.  // This is a common error in DApps. 
